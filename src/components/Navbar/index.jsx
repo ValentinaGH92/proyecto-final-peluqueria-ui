@@ -27,7 +27,7 @@ const PeluNav = () => {
     <Navbar bg="dark" data-bs-theme="dark">
       <Container>
         <Navbar.Brand href="#home" className="icon-pelu">
-          Navbar
+          Salón Bella
         </Navbar.Brand>
         <Nav className="me-auto">
           <Nav.Link href="/">Inicio</Nav.Link>

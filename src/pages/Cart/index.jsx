@@ -6,12 +6,13 @@ import OrderSummary from "../../components/Cart/OrderSummary";
 const Cart = () => {
   return (
     <Container className="mt-5">
-      <h1>Carrito</h1>
       <Row>
         <Col md={8}>
+          <h2>Carrito</h2>
           <CartListing />
         </Col>
         <Col md={4}>
+          <h3>Resumen de la compra</h3>
           <OrderSummary />
         </Col>
       </Row>

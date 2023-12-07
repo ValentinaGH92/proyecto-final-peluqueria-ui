@@ -9,7 +9,9 @@ const Login = ({ show, onHide }) => {
   const handleLogin = async (e) => {
     e.preventDefault();
 
-    const isLogged = await login({ email, password });
+    const userData = { email, password };
+
+    const isLogged = await login(userData);
 
     if (isLogged) onHide();
   };
@@ -44,7 +46,7 @@ const Login = ({ show, onHide }) => {
           </Form.Group>
 
           <Button variant="primary" type="submit" className="my-3">
-            Login
+            Iniciar sesion
           </Button>
         </Form>
       </Modal.Body>

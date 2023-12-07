@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import { Form, Button, Container } from "react-bootstrap";
 import createNewUser from "../../services/users/createNewUser";
+import ModalCreateUser from "../../components/Registration/ModalCreateUser";
+import { useNavigate } from "react-router-dom";
 
 const Registration = () => {
+  const navigate = useNavigate();
+  const [showModal, setShowModal] = useState(false);
   const [usuario, setUsuario] = useState({
     name: "",
     email: "",
@@ -23,8 +27,16 @@ const Registration = () => {
     console.log("data: ", data);
   };
 
+  const handleCloseModal = () => {
+    navigate("/store");
+    setShowModal(false);
+  };
+
+  const handleShowModal = () => setShowModal(true);
+
   return (
     <Container>
+      <ModalCreateUser show={showModal} handleClose={handleCloseModal} />
       <div className="my-4">
         <Form onSubmit={handleSubmit}>
           <Form.Group controlId="formNombre">
@@ -60,7 +72,12 @@ const Registration = () => {
             />
           </Form.Group>
 
-          <Button variant="primary" type="submit" className="my-3">
+          <Button
+            variant="primary"
+            type="submit"
+            className="my-3"
+            onClick={handleShowModal}
+          >
             Registrarse
           </Button>
         </Form>

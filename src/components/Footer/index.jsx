@@ -11,9 +11,7 @@ const PeluFooter = () => {
   return (
     <MDBFooter bgColor="light" className="text-center text-lg-start text-muted">
       <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-        <div className="me-5 d-none d-lg-block">
-          <span>Get connected with us on social networks:</span>
-        </div>
+        <div className="me-5 d-none d-lg-block"></div>
 
         <div>
           <a href="" className="me-4 text-reset">
@@ -43,12 +41,13 @@ const PeluFooter = () => {
             <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4">
               <h6 className="text-uppercase fw-bold mb-4">
                 <MDBIcon icon="gem" className="me-3" />
-                Company name
+                Peluquería Bella
               </h6>
               <p>
-                Here you can use rows and columns to organize your footer
-                content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.
+                Esta peluquería es increíble: tienen estilistas talentosos, un
+                ambiente acogedor y utilizan productos de alta calidad. Te
+                aseguro que te encantará la experiencia y saldrás luciendo
+                espectacular. ¡No te la pierdas!.
               </p>
             </MDBCol>
 
@@ -56,46 +55,46 @@ const PeluFooter = () => {
               <h6 className="text-uppercase fw-bold mb-4">Products</h6>
               <p>
                 <a href="#!" className="text-reset">
-                  Angular
+                  Shampoo
                 </a>
               </p>
               <p>
                 <a href="#!" className="text-reset">
-                  React
+                  Cremas de tratamiento
                 </a>
               </p>
               <p>
                 <a href="#!" className="text-reset">
-                  Vue
+                  Tinturas de pelo
                 </a>
               </p>
               <p>
                 <a href="#!" className="text-reset">
-                  Laravel
+                  Aceites
                 </a>
               </p>
             </MDBCol>
 
             <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4">
-              <h6 className="text-uppercase fw-bold mb-4">Useful links</h6>
+              <h6 className="text-uppercase fw-bold mb-4">Services</h6>
               <p>
                 <a href="#!" className="text-reset">
-                  Pricing
+                  Cortes de Cabello
                 </a>
               </p>
               <p>
                 <a href="#!" className="text-reset">
-                  Settings
+                  Masajes Capilares
                 </a>
               </p>
               <p>
                 <a href="#!" className="text-reset">
-                  Orders
+                  Balayages
                 </a>
               </p>
               <p>
                 <a href="#!" className="text-reset">
-                  Help
+                  Cambio de look
                 </a>
               </p>
             </MDBCol>

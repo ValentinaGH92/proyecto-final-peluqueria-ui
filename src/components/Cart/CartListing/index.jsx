@@ -1,5 +1,5 @@
 import { useCartContext } from "../../../context/cart";
-import { Row, Col, Card, Button } from "react-bootstrap";
+import { Row, Col, Card } from "react-bootstrap";
 import { getPriceFormaterToClp } from "../../../utils/priceFormater";
 
 const CartListing = () => {

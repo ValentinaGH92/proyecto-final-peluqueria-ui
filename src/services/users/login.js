@@ -7,7 +7,7 @@ const login = async (userData) => {
 
     const statusCode = response.status;
 
-    const data = await response.json();
+    const data = response.data;
 
     sessionStorage.setItem("utid", data.token);
     sessionStorage.setItem("userName", data.userName);
